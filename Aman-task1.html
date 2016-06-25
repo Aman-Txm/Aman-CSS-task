@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aman task one</title>
+    <style rel="stylesheet">/*让box排成表格样式*/
+    .bbox,.box{
+        margin:0;
+        padding:0;} /*margin 0 padding 0 ->去掉每个box间的间距，间距产生是因为代码间有折行*/
+    .bbox{
+        font-size: 0;
+        width:620px;
+        position: absolute;
+        top:50%;
+        left:50%;/*top,left各一半让bbox在中间*/
+        margin-top: -320px;
+        margin-left: -320px;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        display: inline-block;/*显示为行内块状*/
+        border-radius: 5%;/*切成圆角*/
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    </style>
+</head>
+<body>
+<div class="bbox">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>
